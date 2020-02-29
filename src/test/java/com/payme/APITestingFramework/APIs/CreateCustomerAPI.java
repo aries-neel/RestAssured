@@ -27,6 +27,8 @@ public class CreateCustomerAPI extends BaseTest {
 		
 	}
 	
+	// separating business logic from test case
+	
 public static Response sendPostRequestToCreateCustomerWithInValidAuthKey(Hashtable<String, String> data) {
 		
 		
