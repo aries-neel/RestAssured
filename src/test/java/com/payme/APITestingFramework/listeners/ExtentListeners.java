@@ -26,7 +26,7 @@ import com.payme.APITestingFramework.Utilites.TestConfig;
 public class ExtentListeners implements ITestListener, ISuiteListener {
 
 	static Date d = new Date();
-	static String fileName = "Extent_" + d.toString().replace(":", "_") + ".html";
+	static String fileName = "Extent_" + d.toString().replace(":", "_").replace("%", "_") + ".html";
 
 	private static ExtentReports extent = ExtentManager
 			.createInstance(System.getProperty("user.dir") + "\\reports\\" + fileName);
