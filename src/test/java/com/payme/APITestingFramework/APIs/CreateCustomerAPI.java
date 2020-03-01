@@ -27,11 +27,12 @@ public class CreateCustomerAPI extends BaseTest {
 		
 	}
 	
-	// separating business logic from test case
+	
 	
 public static Response sendPostRequestToCreateCustomerWithInValidAuthKey(Hashtable<String, String> data) {
 		
-		
+		//send
+	
 		Response response = given().auth().basic(prop.getProperty("invalidSecretKey"), "")
 							.formParam("name", data.get("name"))
 							.formParam("email", data.get("email"))
